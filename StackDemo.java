@@ -32,7 +32,7 @@ public class StackDemo {
              * If array is full, then create another array and copy all the data and then
              * push the element & set the refernce of new array to old one.
              */
-            if (tos == data.length) {
+            if (tos == data.length - 1) {
                 int[] newData = new int[2 * data.length];
                 for (int i = 0; i < data.length; i++) {
                     newData[i] = data[i];
